@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Glyphicon } from 'react-bootstrap';
-
+import store from '../store'
 const styles = {
   products: {
     display: 'flex',
@@ -45,9 +45,10 @@ class ProductList extends Component {
       </div>
     );
   }
-
+//EVENTO
   addToCart(product) {
-
+    //ACTION
+    store.dispatch()
   }
 }
 
